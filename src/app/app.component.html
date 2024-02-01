@@ -7,7 +7,7 @@
   The user is not logged
 </ng-template>
 
-<div defer on idle [ngSwitch]="accessLevel">
+<div [ngSwitch]="accessLevel">
   <app-admin-dashboard *ngSwitchCase="'admin'" />
   <app-moderator-dashboard *ngSwitchCase="'moderator'" />
   <app-user-dashboard *ngSwitchDefault />
